@@ -19,16 +19,22 @@ class MyListTile extends StatelessWidget {
           color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(12),
         ),
-        child: ListTile(
-          title: Text(
-            title,
-            style:
-                TextStyle(color: Theme.of(context).colorScheme.inversePrimary),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+            minHeight: 75, // Minimum height
+            maxHeight: 200, // Maximum height
           ),
-          subtitle: Text(
-            subTitle,
-            style: TextStyle(
-              color: Theme.of(context).colorScheme.secondary,
+          child: ListTile(
+            title: Text(
+              title,
+              style: TextStyle(
+                  color: Theme.of(context).colorScheme.inversePrimary),
+            ),
+            subtitle: Text(
+              subTitle,
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.secondary,
+              ),
             ),
           ),
         ),

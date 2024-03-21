@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:socialmediaapv2/components/MyDrawer.dart';
 import 'package:socialmediaapv2/components/MyListTile.dart';
 import 'package:socialmediaapv2/components/MyPostButton.dart';
+import 'package:socialmediaapv2/components/MyPostTile.dart';
 import 'package:socialmediaapv2/components/MyTextField.dart';
 import 'package:socialmediaapv2/database/firestore.dart';
 
@@ -90,7 +91,10 @@ class HomePage extends StatelessWidget {
                     Timestamp timeStamp = post['TimeStamp'];
 
                     // return as a list tile
-                    return MyListTile(title: message, subTitle: userEmail);
+                    return MyPostTile(
+                        title: message,
+                        subTitle: userEmail,
+                        timestamp: timeStamp.toString());
                   },
                 ),
               );
