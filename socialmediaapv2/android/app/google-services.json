@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "642153987831",
+    "project_id": "minimal-social-app2",
+    "storage_bucket": "minimal-social-app2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642153987831:android:0486c17981ac176e351df2",
+        "android_client_info": {
+          "package_name": "com.example.socialmediaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm0Re-kabt25Q5bpOWAfuWkiiES3g6vRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642153987831:android:0c61aea491a854d7351df2",
+        "android_client_info": {
+          "package_name": "com.example.socialmediaapv2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm0Re-kabt25Q5bpOWAfuWkiiES3g6vRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
