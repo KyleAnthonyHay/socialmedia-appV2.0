@@ -18,7 +18,7 @@ class MyPostButton extends StatelessWidget {
         child: Center(
           child: Icon(
             Icons.done,
-            color: Theme.of(context).colorScheme.inversePrimary,
+            color: Theme.of(context).colorScheme.primary,
           ),
         ),
       ),
