@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:socialmediaapv2/auth/LoginOrRegister.dart';
 import 'package:socialmediaapv2/auth/auth.dart';
 import 'package:socialmediaapv2/firebase_options.dart';
@@ -11,6 +12,7 @@ import 'package:socialmediaapv2/theme/LightMode.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
+  await dotenv.load(fileName: "assets/.env");
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
