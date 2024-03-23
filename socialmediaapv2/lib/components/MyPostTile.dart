@@ -35,7 +35,10 @@ class MyPostTile extends StatelessWidget {
                   title: Text(
                     title,
                     style: TextStyle(
-                        color: Theme.of(context).colorScheme.inversePrimary),
+                        color: Theme.of(context).colorScheme.inversePrimary,
+                        fontSize: 15),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
                   subtitle: Text(
                     subTitle,
